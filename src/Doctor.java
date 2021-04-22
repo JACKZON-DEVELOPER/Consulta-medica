@@ -21,3 +21,4 @@ public class Doctor {
         System.out.println("ID= "+ id);
     }
 }
+2

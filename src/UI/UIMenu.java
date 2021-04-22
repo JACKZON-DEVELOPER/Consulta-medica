@@ -3,7 +3,10 @@ package UI;
 import java.util.Scanner;
 public class UIMenu {
 
+    public static final String[] MONTHS = {"Enero","Febrero","Marzo","Abril","Mayo",
+            "Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
     public static void showMenu(){
+
         int respuesta = 0;
         System.out.println("***********************************");
         System.out.println(" Bienbenido al Consultorio medico");
@@ -46,6 +49,9 @@ public class UIMenu {
             switch (respuesta) {
                 case 1:
                     System.out.println("**libro de Citas ");
+                    for (int i = 1; i < 4; i++) {
+                        System.out.println( i + ". " + MONTHS[i]);
+                    }
                     break;
                 case 2:
                     System.out.println("**Mi Cita Medica");
