@@ -3,6 +3,7 @@ public class Doctor {
     //atributos
     static int id = 0;
     String name;
+    String email;
     String speciality;
 
     //comportamiento

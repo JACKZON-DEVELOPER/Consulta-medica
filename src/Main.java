@@ -6,6 +6,9 @@ public class Main {
         Doctor myDoctor1 = new Doctor("Jasson","Cirujano");
         System.out.println(myDoctor1.name);
         System.out.println(myDoctor1.speciality);
+
+        Paciente paciente1 = new Paciente("alejandra","alejandra.mal.com");
+
         //showMenu();
     }
 }

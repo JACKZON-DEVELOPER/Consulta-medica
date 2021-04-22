@@ -1,16 +1,18 @@
 public class Paciente {
     //atributos
-    String name;
-    String email;
-    String address;
-    String phoneNumber;
-    String birthday;
-    double weight;
-    double height;
-    String blood;
+    static int id = 0;
+    private String name;
+    private String email;
+    private String address;
+    private String phoneNumber;
+    private String birthday;
+    private double weight;
+    private double height;
+    private String blood;
 
     //constructor
     Paciente(String name, String email){
+        id++;
         this.name=name;
         this.email=email;
     }
