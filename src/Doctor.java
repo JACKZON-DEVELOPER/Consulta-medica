@@ -7,11 +7,12 @@ public class Doctor {
 
     //comportamiento
     Doctor(){
-        System.out.println("construyendo el metodo doctor");
-        id++;
+
     }
-    Doctor(String name){
-        System.out.println("el nombre del doctor es: " + name);
+    Doctor(String name, String speciality){
+        id++;
+        this.name = name;
+        this.speciality = speciality;
     }
     public void showName(){
         System.out.println(name);
