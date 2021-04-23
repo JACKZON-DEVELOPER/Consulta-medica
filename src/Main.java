@@ -19,6 +19,8 @@ public class Main {
         paciente1.setPhoneNumber("1234567890");
         System.out.println(paciente1.getPhoneNumber());
 
+        System.out.println(paciente1);
+
         //showMenu();
     }
 }

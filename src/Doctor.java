@@ -1,52 +1,49 @@
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor {
+public class Doctor extends User{
 
     //atributos
-    static int id = 0;
-    private String name;
-    private String email;
     private String speciality;
 
     //comportamiento
-    Doctor(){
-
+    Doctor(String name, String email){
+        super(name, email);
     }
-    Doctor(String name, String speciality){
-        id++;
-        this.name = name;
+
+    //getters y setters
+
+    public String getSpeciality() {
+        return speciality;
+    }
+    public void setSpeciality(String speciality) {
         this.speciality = speciality;
-    }
-    public void showName(){
-        System.out.println(name);
-    }
-
-    public void showId(){
-        System.out.println("ID= "+ id);
     }
 
     //esto es una coleccion de objetos
+    //
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
     public void addAvailableAppointment(Date date, String time){
         availableAppointments.add(new AvailableAppointment(date,time));
-
     }
 
     public ArrayList<AvailableAppointment> getAvailableAppointments(){
         return availableAppointments;
     }
 
+    // clase statica anidada para la coleccion de datos
     public static class AvailableAppointment{
         private int id;
         private Date date;
         private String time;
 
+        //constructor
         public AvailableAppointment(Date date, String time) {
             this.date = date;
             this.time = time;
         }
 
+        //getters y setters
         public Date getDate() {
             return date;
         }
