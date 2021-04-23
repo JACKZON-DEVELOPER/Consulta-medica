@@ -31,6 +31,13 @@ public class Doctor extends User{
         return availableAppointments;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\n Especialida: "+ speciality +
+                "\n :::::::: "+ availableAppointments.toString() + ":::::::";
+    }
+
     // clase statica anidada para la coleccion de datos
     public static class AvailableAppointment{
         private int id;
@@ -56,6 +63,13 @@ public class Doctor extends User{
         }
         public void setTime(String time) {
             this.time = time;
+        }
+
+        @Override
+        public String toString() {
+            return "Available Appointment:  " +
+                    "\n date= " + date +
+                    ", time= " + time ;
         }
     }
 }
