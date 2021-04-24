@@ -14,15 +14,15 @@ public class UIMenu {
         System.out.println("***********************************");
         System.out.println(" ");
         do {
-            System.out.println(" 1.- Doctor");
-            System.out.println(" 2.- Paciente");
+            System.out.println(" 1.- model.Doctor");
+            System.out.println(" 2.- model.Paciente");
             System.out.println(" 0.- Salir");
             System.out.println(" ");
             Scanner sc = new Scanner(System.in);
             respuesta = Integer.valueOf(sc.nextLine());
             switch (respuesta){
                 case 1:
-                    System.out.println(" Doctor ");
+                    System.out.println(" model.Doctor ");
                     break;
                 case 2:
                     respuesta = 0;
@@ -40,7 +40,7 @@ public class UIMenu {
         int respuesta = 0;
         do {
             System.out.println("\n\n");
-            System.out.println(" Paciente");
+            System.out.println(" model.Paciente");
             System.out.println(" 1.- Libro de Citas");
             System.out.println(" 2.- Mis Citas");
             System.out.println(" 3.- Regresar");
