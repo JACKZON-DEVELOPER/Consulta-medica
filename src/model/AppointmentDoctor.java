@@ -3,12 +3,14 @@ package model;
 import java.util.Date;
 
 public class AppointmentDoctor implements ISchedulable{
+    //Atributos
     private int id;
     private Paciente paciente;
     private Doctor doctor;
     private Date date;
     private String time;
 
+    // getters y setters
     public int getId() {
         return id;
     }
@@ -49,6 +51,7 @@ public class AppointmentDoctor implements ISchedulable{
         this.time = time;
     }
 
+    // uso del metodo de la interfaz ISchedulable
     @Override
     public void Shedule(Date date, String time) {
 

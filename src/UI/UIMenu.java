@@ -7,7 +7,7 @@ public class UIMenu {
             "Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
     public static void showMenu(){
 
-        int respuesta = 0;
+        int respuesta ;
         System.out.println("***********************************");
         System.out.println(" Bienbenido al Consultorio medico");
         System.out.println(" Por favor seleccione una opcion");
@@ -20,6 +20,7 @@ public class UIMenu {
             System.out.println(" ");
             Scanner sc = new Scanner(System.in);
             respuesta = Integer.valueOf(sc.nextLine());
+
             switch (respuesta){
                 case 1:
                     System.out.println(" model.Doctor ");

@@ -1,17 +1,20 @@
 package model;
 
-public class User {
+public abstract class User {
+    //Atributos
     private int id;
     private String name;
     private String email;
     private String address;
     private String phoneNumber;
 
+    //metodo constructor
     public User(String name, String email) {
         this.name = name;
         this.email = email;
     }
 
+    // getters y setters
     public int getId() {
         return id;
     }
@@ -57,6 +60,7 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
+    //sobre escribiendo el metodo toString
     @Override
     public String toString() {
         return "model.User " +
@@ -65,4 +69,7 @@ public class User {
                 "\n address= " + address +
                 "\n phoneNumber= " + phoneNumber ;
     }
+
+    //metodo abstracto
+    public abstract void showDataUer();
 }

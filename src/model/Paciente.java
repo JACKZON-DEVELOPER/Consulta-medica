@@ -7,7 +7,7 @@ public class Paciente extends User{
     private double height;
     private String blood;
 
-    //constructor
+    //metodo constructor
     public Paciente(String name, String email){
         super(name, email);
     }
@@ -42,6 +42,7 @@ public class Paciente extends User{
         this.blood = blood;
     }
 
+    // metodo toString
     @Override
     public String toString() {
         return super.toString() +
@@ -51,4 +52,12 @@ public class Paciente extends User{
                 ", blood='" + blood + '\'' +
                 '}';
     }
+
+    // Metodo heredado de la calse User
+    @Override
+    public void showDataUer() {
+        System.out.println("paciente ");
+        System.out.println(" historela copleto ");
+    }
+
 }

@@ -8,13 +8,12 @@ public class Doctor extends User{
     //atributos
     private String speciality;
 
-    //comportamiento
+    //metodo constructor con herencia de user
     public Doctor(String name, String email){
         super(name, email);
     }
 
     //getters y setters
-
     public String getSpeciality() {
         return speciality;
     }
@@ -23,7 +22,6 @@ public class Doctor extends User{
     }
 
     //esto es una coleccion de objetos
-    //
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
     public void addAvailableAppointment(Date date, String time){
         availableAppointments.add(new AvailableAppointment(date,time));
@@ -33,11 +31,18 @@ public class Doctor extends User{
         return availableAppointments;
     }
 
+    //sobreescribiendo el metodo toString
     @Override
     public String toString() {
         return super.toString() +
                 "\n Especialida: "+ speciality +
                 "\n :::::::: "+ availableAppointments.toString() + ":::::::";
+    }
+
+    //metodo abstracto heredado de la clase user
+    @Override
+    public void showDataUer() {
+        System.out.println("hospital general de valladolid urgencia");
     }
 
     // clase statica anidada para la coleccion de datos
