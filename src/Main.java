@@ -1,16 +1,16 @@
 import model.Doctor;
-
+import static UI.UIMenu.*;
 import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
 
-        Doctor myDoctor1 = new Doctor("Jasson","jasson@e.com");
-        myDoctor1.addAvailableAppointment(new Date(), "01:00");
-        myDoctor1.addAvailableAppointment(new Date(), "12:00");
-        myDoctor1.addAvailableAppointment(new Date(), "15:30");
-
-        System.out.println(myDoctor1);
+//        Doctor myDoctor1 = new Doctor("Jasson","jasson@e.com");
+//        myDoctor1.addAvailableAppointment(new Date(), "01:00");
+//        myDoctor1.addAvailableAppointment(new Date(), "12:00");
+//        myDoctor1.addAvailableAppointment(new Date(), "15:30");
+//
+//        System.out.println(myDoctor1);
 //        for (model.Doctor.AvailableAppointment ap: myDoctor1.getAvailableAppointments()){
 //            System.out.println( ap.getDate()+" "+ ap.getTime());
 //        }
@@ -23,6 +23,6 @@ public class Main {
 //
 //        System.out.println(paciente1);
 
-        //showMenu();
+        showMenu();
     }
 }

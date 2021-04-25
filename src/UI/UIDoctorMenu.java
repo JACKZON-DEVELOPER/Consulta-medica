@@ -25,6 +25,7 @@ public class UIDoctorMenu {
 
             switch (respuesta){
                 case 1:
+                    showAddAvalibelAppoitmenMenu();
                     break;
                 case 2:
                     break;
@@ -52,7 +53,7 @@ public class UIDoctorMenu {
 
             if (respuesta > 0 && respuesta < 4) {
                 int monthSelected = respuesta;
-                System.out.println(monthSelected+" . "+ UIMenu.MONTHS[monthSelected] );
+                System.out.println(monthSelected+" . "+ UIMenu.MONTHS[monthSelected -1] );
                 System.out.println("inserta la fecha disponible [dd/mm/yyyy]");
                 String date = sc.nextLine();
                 System.out.println("tu fecha: " + date + "es corecta?");
