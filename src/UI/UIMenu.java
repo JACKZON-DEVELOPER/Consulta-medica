@@ -113,6 +113,7 @@ public class UIMenu {
                     if (p.getEmail().equals(email)) {
                         emailCorrect = true;
                         pacienteLogeed = p;
+                        UIPacienteMenu.showPacienteMenu();
 
                     }
                 }
