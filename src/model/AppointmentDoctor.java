@@ -10,6 +10,11 @@ public class AppointmentDoctor implements ISchedulable{
     private Date date;
     private String time;
 
+    public AppointmentDoctor(Paciente paciente, Doctor doctor) {
+        this.paciente = paciente;
+        this.doctor = doctor;
+    }
+
     // getters y setters
     public int getId() {
         return id;
@@ -44,7 +49,7 @@ public class AppointmentDoctor implements ISchedulable{
     }
 
     public String getTime() {
-        return time;
+        return time + " hrs.";
     }
 
     public void setTime(String time) {
@@ -54,6 +59,8 @@ public class AppointmentDoctor implements ISchedulable{
     // uso del metodo de la interfaz ISchedulable
     @Override
     public void Shedule(Date date, String time) {
+        this.date = date;
+        this.time = time;
 
     }
 }

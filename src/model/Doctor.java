@@ -9,6 +9,7 @@ public class Doctor extends User{
 
     //atributos
     private String speciality;
+    private ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
 
     //metodo constructor con herencia de user
     public Doctor(String name, String email){
@@ -24,7 +25,7 @@ public class Doctor extends User{
     }
 
     //esto es una coleccion de objetos
-    ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
+
     public void addAvailableAppointment(String date, String time){
         availableAppointments.add(new AvailableAppointment(date,time));
     }
@@ -64,10 +65,10 @@ public class Doctor extends User{
         }
 
         //getters y setters
-        public Date getDate() {
+        public Date getDate(String DATE) {
             return date;
         }
-        public String getDate(String DATE){
+        public String getDate(){
             return format.format(date);
         }
         public void setDate(Date date) {
